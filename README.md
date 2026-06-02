@@ -22,15 +22,15 @@ The model supports both **in-distribution (ID)** and **out-of-distribution (OOD)
 
 ### Framework Overview
 
-![Framework](img/Overall architecture of CausFlow.png)
+![Framework](img/Overall_architecture_of_CausFlow.png)
 
 ### Causal Disentanglement Module
 
-![SCM](img/Causal disentanglement mechanism.png)
+![SCM](img/Causal_disentanglement_mechanism.png)
 
 ### Conditional Flow Matching Generation
 
-![FlowMatching](img/SCM-conditioned flow matching.png)
+![FlowMatching](img/SCM-conditioned_flow_matching.png)
 
 ---
 
