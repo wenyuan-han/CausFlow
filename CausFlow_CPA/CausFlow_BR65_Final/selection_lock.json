@@ -1,0 +1,92 @@
+{
+  "schema": "br65_final_selection_v1",
+  "lock_sha256": "f27281346dc457f602acab6b78a5caaf61b60e038f46b229827b56d0d9d8ca4b",
+  "selected_steps": {
+    "CFM": 2000,
+    "DDIM": 10000,
+    "NonFlow": 2000
+  },
+  "selection_rule": "minimum three-seed inner Dose-OOD mean Raw DEG50 W1; earliest within 1% at 40 NFE (NonFlow 1)",
+  "selection_means": {
+    "CFM": {
+      "2000": 0.054812572892172375,
+      "10000": 0.055916749586272435
+    },
+    "DDIM": {
+      "2000": 0.0937996475489288,
+      "10000": 0.09169522357906884
+    },
+    "NonFlow": {
+      "2000": 0.08870445576212296,
+      "10000": 0.08943040866729801
+    }
+  },
+  "primary_nfe": {
+    "CFM": 40,
+    "DDIM": 40,
+    "NonFlow": 1
+  },
+  "nfe_sweep": [
+    5,
+    10,
+    20,
+    40,
+    50,
+    100
+  ],
+  "low_nfe_candidates": [
+    10,
+    20
+  ],
+  "seeds": {
+    "0": {
+      "plan_sha256": "61a31b016ce5442e65981d8f801aba5b73ac7d69699996bc1c2c66c49e33cf7c",
+      "train_status_sha256": "837cb1f9de5c0f7bbd98dbb1a054e0341b7debb64972d6699b65e05765790b62",
+      "predict_status_sha256": "5856d943e4158cb82936090144d22ce122fd671a9bbe0a981599aeb8dfa06730",
+      "metrics_sha256": "1c267e9e5855da14349b68bcc8a940c78efe20d298c13b8c03b7dc0cc6c8a5ac",
+      "checkpoint_hashes": {
+        "CFM_2000.pt": "85d0c2c08eb5bebfeaf42692faba07ca53825ee7ef0f99b2b16e1bfedffd2e44",
+        "CFM_10000.pt": "81a0851b65a88d5b44ab2aaa48ed0e2770ad90dd63121c6e207ac4a3a5e1dac0",
+        "NonFlow_2000.pt": "6adee594e389609f034a6276a235969d1431883b90c16b5aed2f91beaab27859",
+        "NonFlow_10000.pt": "efe436439c06e7ac0ea98b2c3e8313f81bd4726b65334170bfc19d2ba95e2851",
+        "DDIM_2000.pt": "1df706de31589ca93657fe6d9d9163fb232453ccc51b8fd53deca5b74b9744cd",
+        "DDIM_10000.pt": "bdfeaa8254554ad472bc7729848207c6a4cd765205cacdbe3bfc2ee574b8247e"
+      },
+      "shared_hash": "e4eafb1b442ee03fd5dd28d2a22861f44266750a3d55e31b2feee575eed34c96",
+      "result_zip_sha256": "daef93a83062845cc449dee5530d85ff6e82bfeff65a8fb00ad72a8d216ecbb9"
+    },
+    "1": {
+      "plan_sha256": "09d277a5c1b1b98740318fdb4bc4be0f9aea05800a7b032b202b726becac5bb7",
+      "train_status_sha256": "2b008951291616fe3f17723e977c2f060005ee5769abb2635115ca3320d41b4d",
+      "predict_status_sha256": "ce3d3177f2caf2b92acd32362da51428bb3d3674511656d21ba44574f847340e",
+      "metrics_sha256": "c69e7b92f8f2f8b8088b513d517d7907260c696f97862a62c16739bbb135cd23",
+      "checkpoint_hashes": {
+        "CFM_2000.pt": "b4c72c1be56fbee0e37a2098b3149216c9c195773113cf6cd487c38c1223cf6c",
+        "CFM_10000.pt": "a8fb3e5eaef269c9b2fa5336d7e059a9e2d286570f7accd18d83a729b512731d",
+        "NonFlow_2000.pt": "2d80c2b9116d9539c857c15d8191bee55a6b9168d35488df8c51c3f07253b68e",
+        "NonFlow_10000.pt": "c2372d3d952c1cef14d672081269f16ef7465e333a7ea1efe8537a955c54a129",
+        "DDIM_2000.pt": "407a5f9c0e547cec687ff947ecab5a4d43003edf236e168e148e19f181fa328d",
+        "DDIM_10000.pt": "0363d3b1aac500cca49463b836399b5619a835b863e3f26b74488563171971f0"
+      },
+      "shared_hash": "bdb954dd2dcc5f2819c3642d15dd2dd5d29fd028cbb200ee069f7d2ae3351850",
+      "result_zip_sha256": "5f675c6167c603b8a7dc15adc82d8853541ad05f7d3d2e116a36eb61dd76040c"
+    },
+    "2": {
+      "plan_sha256": "21dce70eea25620d99893525fb21eb2667ff1f94b27d50f9d186a18de1ec1588",
+      "train_status_sha256": "8970e4f1587f792b9869e12a9ab359af64287a1e75c5c6c6c18c63ea6aca6bf4",
+      "predict_status_sha256": "2e714b9d5f2fffaaab823cb06216afd398d6c6695b8ac5722558b9f7f6a3de14",
+      "metrics_sha256": "57d794c071844aa847700a2d04ece77446d6173737229a1e2953bdfd6aaa5ba1",
+      "checkpoint_hashes": {
+        "CFM_2000.pt": "bffdf51f3722c9e1db5c5834d3cc94c4024410f90098df200e4fc67ce5cdfc1a",
+        "CFM_10000.pt": "c06294698f8dbeec9c8e4aa2d47ead98abded51e9d80ff8f238ee07394a5783a",
+        "NonFlow_2000.pt": "15590ca0f7ec298f237595ae3e7a22f61772f46b24440885da81386c904cd373",
+        "NonFlow_10000.pt": "129a998db0dabd43c4a8178790bccfbd42648e4721f8003d1551c3f4667bad29",
+        "DDIM_2000.pt": "8a638b2c9502689d9fe6449e3195810e9ba6c17d995041c12789f15d94d58140",
+        "DDIM_10000.pt": "6165bd687a9e6dffd12cdba866387a83f623d26bef1b52ed639155b167a70c83"
+      },
+      "shared_hash": "210d1a0845e00edab0e0bfd3ffa8e4e22ce61ba1142a4da3f15849e8aabe1483",
+      "result_zip_sha256": "23cf23e44cd22d8b6894a126eb42382b04a74f532b7849bde1329b013b08a06a"
+    }
+  },
+  "scope": "Retrospective V2 outer evaluation, not independent; no target-driven reselection."
+}

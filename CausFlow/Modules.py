@@ -425,9 +425,11 @@ class Denoise_net(nn.Module):
 
         # ---------- Time embedding ----------
         if with_time_emb:
+            time_dim = dim if dim % 2 == 0 else dim + 1
+
             self.time_mlp = nn.Sequential(
-                SinusoidalPosEmb(dim),
-                nn.Linear(dim, dim * 4),
+                SinusoidalPosEmb(time_dim),
+                nn.Linear(time_dim, dim * 4),
                 Mish(),
                 nn.Linear(dim * 4, dim)
             )

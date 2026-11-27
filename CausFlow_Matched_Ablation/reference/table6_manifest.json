@@ -1,0 +1,84 @@
+{
+  "source": "D:\\PycharmProjects\\CausCell-main\\causcell\\CausCell.py",
+  "source_sha256": "21edc339e577f5ed2a7b55cf7586a0ac883294e9740acaa650d36b7ef68756b4",
+  "train_steps_argument": 100000,
+  "train_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "evaluation_seed": 2026,
+  "train_batch_size": 64,
+  "gradient_accumulate_every": 2,
+  "training_lr": 5e-06,
+  "inference_steps": 100,
+  "sampling_counts": 10,
+  "sample_batch_size": 128,
+  "checkpoint_key": "model",
+  "concept_list": [
+    "Age",
+    "Domain",
+    "Celltype"
+  ],
+  "concept_counts": [
+    3,
+    8,
+    10
+  ],
+  "concept_cdag": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "data": {
+    "train": {
+      "path": "D:\\PycharmProjects\\CausCell-main\\Data\\transformed_MERFISH_ID_train.h5ad",
+      "shape": [
+        100496,
+        374
+      ],
+      "sha256": "e5e4d814f21c56f23e0e0d7b324da952f264d872948fae56d41f91987f8816c8"
+    },
+    "ID": {
+      "path": "D:\\PycharmProjects\\CausCell-main\\Data\\transformed_MERFISH_ID_test.h5ad",
+      "shape": [
+        25176,
+        374
+      ],
+      "sha256": "b04db26ccba9c66409ec033eb8a1bf17dde1ae7f72492af87725790f0401d93a"
+    },
+    "OOD": {
+      "path": "D:\\PycharmProjects\\CausCell-main\\Data\\transformed_MERFISH_OOD_test.h5ad",
+      "shape": [
+        34903,
+        374
+      ],
+      "sha256": "1de0f92dda3980982a47abd7903b394f1e9e23598d2b8f0240f748191c36d1f7"
+    }
+  },
+  "train_only": false,
+  "torch_version": "2.1.0+cu121"
+}
